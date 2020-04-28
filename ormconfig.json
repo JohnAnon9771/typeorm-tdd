@@ -1,0 +1,16 @@
+{
+  "type": "postgres",
+  "host": "localhost",
+  "port": 5432,
+  "username": "postgres",
+  "password": "docker",
+  "database": "Meetup",
+  "synchronize": true,
+  "logging": false,
+  "entities": ["src/app/models/*.ts"],
+  "migrations": ["src/database/migrations/*.ts"],
+  "cli": {
+    "entitiesDir": "src/app/models",
+    "migrationsDir": "src/database/migrations"
+  }
+}
